@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Pertama Partners formative practice quiz for AI in Operations."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#1a2744" />
+    <title>AI in Operations Practice · Pertama Partners</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#quiz-app">Skip to the practice question</a>
+
+    <div class="site-frame">
+      <header class="topbar">
+        <div class="brand" aria-label="Pertama Partners, AI in Operations">
+          <span class="brand-lockup" role="img" aria-label="Pertama Partners">
+            <span class="brand-name">PERTAMA</span>
+            <span class="brand-partners">PARTNERS</span>
+          </span>
+          <span class="brand-context">
+            <strong>AI in Operations</strong>
+            <small>Formative practice</small>
+          </span>
+        </div>
+
+        <nav class="resource-nav" aria-label="Course resources">
+          <a href="study-guide/">Study guide</a>
+          <a href="./" aria-current="page">Practice quiz</a>
+        </nav>
+
+        <div class="session-tools">
+          <span class="session-status" aria-live="polite">
+            <i aria-hidden="true"></i>
+            <span id="review-status">Review pile: 0</span>
+          </span>
+          <button class="text-button" id="reset-button" type="button" hidden>
+            Start over
+          </button>
+        </div>
+      </header>
+
+      <main id="quiz-app" tabindex="-1"></main>
+
+      <footer class="site-footer">
+        <span>Practice only · not the official ASK assessment</span>
+        <span>No sign-in · no answers saved</span>
+      </footer>
+    </div>
+
+    <noscript>
+      <p class="noscript-message">This practice quiz needs JavaScript enabled.</p>
+    </noscript>
+    <script src="quiz-engine.js" defer></script>
+    <script src="questions.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
