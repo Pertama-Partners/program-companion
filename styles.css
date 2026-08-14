@@ -885,7 +885,10 @@ input:focus-visible + .choice-letter,
 }
 
 .guide-resource-links {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
 }
 
 .text-link {
@@ -1412,6 +1415,230 @@ input:focus-visible + .choice-letter,
   font-size: 1rem;
 }
 
+/* Program resources */
+
+.resources-frame {
+  background: var(--warm-white);
+}
+
+.resources-hero {
+  display: grid;
+  min-height: calc(100vh - 151px);
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  align-items: center;
+  gap: clamp(48px, 8vw, 112px);
+  padding: clamp(64px, 10vh, 116px) clamp(8px, 3vw, 34px);
+}
+
+.resources-hero-copy {
+  max-width: 780px;
+}
+
+.resources-hero-copy h1,
+.resources-section-heading h2 {
+  margin: 22px 0 24px;
+  font-family: var(--display);
+  font-size: clamp(3.6rem, 7.2vw, 6.8rem);
+  font-weight: 500;
+  letter-spacing: -0.048em;
+  line-height: 0.88;
+}
+
+.resources-hero-copy h1 em,
+.resources-section-heading h2 em {
+  color: var(--gold-dark);
+  font-weight: 400;
+}
+
+.resources-hero-lede,
+.resources-section-lede {
+  max-width: 680px;
+  margin: 0 0 34px;
+  color: var(--slate);
+  font-size: clamp(1.02rem, 1.6vw, 1.22rem);
+  line-height: 1.7;
+}
+
+.resources-hero-note {
+  padding: 30px 0 30px 34px;
+  border-left: 1px solid var(--line-strong);
+}
+
+.resources-hero-note h2 {
+  margin: 0 0 22px;
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.resources-hero-note p {
+  margin: 0 0 20px;
+  color: var(--slate);
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+.resources-privacy {
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--navy) !important;
+  font-size: 0.76rem !important;
+  font-weight: 600;
+}
+
+.resources-section {
+  padding: clamp(70px, 10vh, 118px) clamp(8px, 3vw, 34px);
+  border-top: 1px solid var(--line);
+}
+
+.resources-section-heading {
+  max-width: 760px;
+}
+
+.resources-section-heading h2 {
+  margin-top: 18px;
+  font-size: clamp(3rem, 6.2vw, 5.7rem);
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 52px;
+  background: var(--line);
+}
+
+.resource-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--paper);
+}
+
+.resource-card-kicker {
+  margin: 0 0 20px;
+  color: var(--gold-dark);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resource-card h3 {
+  margin: 0 0 14px;
+  font-family: var(--display);
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+
+.resource-card p {
+  margin: 0 0 24px;
+  color: var(--slate);
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+.resource-card .button,
+.resource-card .text-link {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.resource-card .button {
+  min-height: 44px;
+}
+
+.resource-card .text-link {
+  padding-top: 10px;
+}
+
+.resource-file-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 52px;
+  background: var(--line);
+}
+
+.resource-file {
+  display: grid;
+  grid-template-columns: 48px 1fr auto;
+  gap: 18px;
+  align-items: center;
+  padding: 22px 24px;
+  background: var(--paper);
+}
+
+.resource-file-number {
+  color: var(--gold-dark);
+  font-family: var(--display);
+  font-size: 1.35rem;
+}
+
+.resource-file h3 {
+  margin: 0 0 4px;
+  color: var(--navy);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.resource-file p {
+  margin: 0;
+  color: var(--slate);
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.resource-file a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--navy);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.resource-file a:hover {
+  color: var(--gold-dark);
+}
+
+.resources-close {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.72fr);
+  align-items: center;
+  gap: clamp(48px, 9vw, 128px);
+}
+
+.resources-close h2 {
+  max-width: 640px;
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(3rem, 6.2vw, 5.7rem);
+  font-weight: 500;
+  letter-spacing: -0.048em;
+  line-height: 0.88;
+}
+
+.resources-close h2 em {
+  color: var(--gold-dark);
+  font-weight: 400;
+}
+
+.resources-close-copy p {
+  max-width: 440px;
+  margin: 0 0 24px;
+  color: var(--slate);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 .noscript-message {
   margin: 0;
   padding: 20px;
@@ -1453,13 +1680,16 @@ input:focus-visible + .choice-letter,
   .completion-screen,
   .guide-hero,
   .guide-method,
-  .guide-close {
+  .guide-close,
+  .resources-hero,
+  .resources-close {
     grid-template-columns: 1fr;
   }
 
   .briefing-rail,
   .completion-note,
-  .guide-hero-note {
+  .guide-hero-note,
+  .resources-hero-note {
     max-width: 680px;
   }
 
@@ -1535,7 +1765,8 @@ input:focus-visible + .choice-letter,
 
   .intro-screen,
   .completion-screen,
-  .guide-hero {
+  .guide-hero,
+  .resources-hero {
     min-height: auto;
     padding: 58px 0 70px;
   }
@@ -1544,13 +1775,17 @@ input:focus-visible + .choice-letter,
   .completion-copy h1,
   .guide-hero-copy h1,
   .section-heading h2,
-  .guide-close h2 {
+  .guide-close h2,
+  .resources-hero-copy h1,
+  .resources-section-heading h2,
+  .resources-close h2 {
     font-size: clamp(3.15rem, 16vw, 4.8rem);
   }
 
   .briefing-rail,
   .completion-note,
-  .guide-hero-note {
+  .guide-hero-note,
+  .resources-hero-note {
     padding-left: 22px;
   }
 
@@ -1631,7 +1866,8 @@ input:focus-visible + .choice-letter,
   }
 
   .guide-resource-links,
-  .guide-resource-links .button {
+  .guide-resource-links .button,
+  .guide-resource-links .text-link {
     width: 100%;
   }
 
@@ -1677,6 +1913,25 @@ input:focus-visible + .choice-letter,
 
   .vocabulary-outcome {
     max-width: 150px;
+  }
+
+  .resource-grid,
+  .resource-file-list {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-card {
+    padding: 25px 20px;
+  }
+
+  .resource-file {
+    grid-template-columns: 38px 1fr;
+    padding: 20px;
+  }
+
+  .resource-file a {
+    grid-column: 2;
+    justify-self: start;
   }
 }
 
