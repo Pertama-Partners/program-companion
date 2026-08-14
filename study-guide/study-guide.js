@@ -179,6 +179,7 @@ function resourceNavMarkup() {
   return `
     <div class="guide-resource-links">
       <a class="button button-primary" href="../">Take the practice quiz <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="../repository/">Browse program resources <span aria-hidden="true">↗</span></a>
     </div>`;
 }
 
