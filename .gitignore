@@ -1,0 +1,11 @@
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Operating-system files
+.DS_Store
+
+# Local tooling and generated scratch
+.codex/
+.scratch/
