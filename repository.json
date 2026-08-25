@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "repository": "Pertama-Partners/program-companion",
+  "domain": "public",
+  "repository_class": "public-material",
+  "data_class": "public",
+  "authority": "canonical",
+  "lifecycle": "active",
+  "business_owner": "Mike Hauge",
+  "client_scope": "none",
+  "deployment_tier": "preview-only",
+  "canonical_source": null,
+  "successor": null,
+  "plane_project": null,
+  "archive_condition": "Archive when the public program resources move to an approved successor surface and all public URLs have a migration record."
+}
